@@ -113,15 +113,9 @@ It should depend only on:
 
 ---
 
-## 3. Computational Complexity
+## 3. React Anti-Patterns
 
-The goal of the refactoring is not necessarily to eliminate sorting, but to eliminate unnecessary calculations performed during sorting.
-
----
-
-## 4. React Anti-Patterns
-
-### 4.1 Using Array Index as a Key
+### 3.1 Using Array Index as a Key
 
 The original code uses:
 
@@ -139,9 +133,9 @@ key={`${balance.blockchain}-${balance.currency}`}
 
 ---
 
-## 5. TypeScript Issues
+## 4. TypeScript Issues
 
-### 5.1 Avoid `any`
+### 4.1 Avoid `any`
 
 The original implementation contains:
 
@@ -161,7 +155,7 @@ instead.
 
 ---
 
-## 6. Refactored Implementation
+## 5. Refactored Implementation
 
 ```tsx
 interface WalletBalance {
